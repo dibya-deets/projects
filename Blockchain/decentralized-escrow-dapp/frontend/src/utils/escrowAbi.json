@@ -1,0 +1,179 @@
+[
+    {
+        "type": "constructor",
+        "inputs": [
+            {
+                "name": "_receiver",
+                "type": "address",
+                "baseType": "address"
+            }
+        ],
+        "payable": false
+    },
+    {
+        "type": "event",
+        "inputs": [
+            {
+                "name": "receiver",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true
+            }
+        ],
+        "name": "Approved",
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "inputs": [
+            {
+                "name": "by",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true
+            },
+            {
+                "name": "refunded",
+                "type": "uint256",
+                "baseType": "uint256",
+                "indexed": false
+            }
+        ],
+        "name": "Cancelled",
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "inputs": [
+            {
+                "name": "from",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "baseType": "uint256",
+                "indexed": false
+            }
+        ],
+        "name": "Deposited",
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "inputs": [
+            {
+                "name": "to",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "baseType": "uint256",
+                "indexed": false
+            }
+        ],
+        "name": "FundsReleased",
+        "anonymous": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "approve",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "cancel",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "currentState",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint8",
+                "baseType": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "deposit",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "payable",
+        "payable": true
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "depositor",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "escrowAgent",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "receiver",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "releaseFunds",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false
+    }
+]

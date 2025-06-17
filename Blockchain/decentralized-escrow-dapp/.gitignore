@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+dist/
+frontend/dist/
+
+# Hardhat & ignition
+hardhat.cache/
+hardhat.log
+ignition/deployments/
+
+# Environment & local secrets
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.production.local
+frontend/.env
+
+# Vite & Tailwind
+.vite/
+.tailwind/
+.tailwind-cache/
+
+# IDE/editor settings
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Lock files (optional – keep only one)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
